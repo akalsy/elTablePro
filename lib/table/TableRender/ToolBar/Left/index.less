@@ -1,0 +1,31 @@
+.pro-toolbar-left {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    margin-right: 20px;
+
+    .pro-toolbar-title {
+        position: relative;
+        padding-left: 10px;
+        &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 10px;
+            width: 3px;
+            height: 18px;
+            background-color: #5d95ea;
+        }
+    }
+
+    .el-tabs{
+        margin-right: 15px;
+        .el-tabs__header{
+            margin: 0;
+        }
+    }
+
+    .pro-toolbar-search {
+        flex-grow: 1;
+    }
+}

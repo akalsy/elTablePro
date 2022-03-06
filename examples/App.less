@@ -1,0 +1,125 @@
+@font-face {
+  font-family: pffont;
+  src: url(./assets/PINGFANG_MEDIUM.TTF);
+}
+
+html,
+body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  font-family: pffont;
+}
+
+#app {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+
+  // .tablecontent {
+  //   position: absolute;
+  //   top: 15px;
+  //   bottom: 15px;
+  //   right: 15px;
+  //   left: 15px;
+
+    // @media only screen and (min-width: 768px) {
+    //   .el-col-sm-12 {
+    //     width: 50%;
+    //   }
+    // }
+
+    // @media only screen and (min-width: 1050px) {
+    //   .el-col-lg-5 {
+    //     width: 33.33%;
+    //   }
+    // }
+
+    // @media only screen and (min-width: 1400px) {
+    //   .el-col-lg-5 {
+    //     width: 25%;
+    //   }
+    // }
+
+    // @media only screen and (min-width: 1710px) {
+    //   .el-col-lg-5 {
+    //     width: 20%;
+    //   }
+    // }
+
+    // @media only screen and (min-width: 1920px) {
+    //   .el-col-xl-5 {
+    //     width: 20%;
+    //   }
+    // }
+
+    .list-item {
+      color: #fff;
+      display: flex;
+      flex-direction: row;
+      width: 336px;
+      height: 175px;
+      box-sizing: border-box;
+      border: 1px solid #447ab4;
+      padding: 0 20px;
+      // justify-content: space-between;
+      background-color: rgba(25, 62, 102, 0.55);
+      width: calc(100% / 5 - 20px);
+      margin: 0 10px 15px 10px;
+
+      .item-left {
+        width: 88px;
+      }
+
+      .item-right {
+        width: 0;
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+
+        .right-top {
+          height: 0;
+          flex-grow: 1;
+          padding: 0 15px;
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-end;
+
+          p {
+            font-size: 14px;
+
+            &:nth-child(1) {
+              font-size: 18px;
+            }
+
+            &:nth-child(2) {
+              margin-bottom: 8px;
+            }
+
+            &:nth-last-child(1) {
+              border-top: 1px solid #2f5a85;
+              padding-top: 5px;
+              color: #71a4e6;
+              height: 40px;
+              box-sizing: border-box;
+              margin-bottom: 0;
+              font-size: 16px;
+            }
+          }
+        }
+
+        .right-bottom {
+          text-align: right;
+          height: 42px;
+        }
+
+        p {
+          margin: 0;
+          padding: 0;
+        }
+      }
+    }
+  // }
+}
+
+

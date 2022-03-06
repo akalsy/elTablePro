@@ -1,0 +1,40 @@
+.pro-toolbar-right {
+  display: flex;
+  align-items: center;
+
+  .pro-toolbar-actions {
+    // margin-right: 10px;
+    > * {
+      margin-left: 0 !important;
+      margin-right: 10px !important;
+    }
+  }
+  .el-divider {
+    height: 28px;
+  }
+  .pro-toolbar-settings {
+    display: flex;
+    align-items: center;
+
+    > i {
+      font-size: 20px;
+      margin: 1px 6px 0;
+      cursor: pointer;
+
+      &:hover {
+        // color: #1890ff;
+      }
+    }
+
+    .el-popover__reference-wrapper {
+      font-size: 20px;
+      margin: 0 6px;
+      cursor: pointer;
+    }
+    .el-dropdown {
+      font-size: 20px;
+      margin: 0 6px;
+      cursor: pointer;
+    }
+  }
+}

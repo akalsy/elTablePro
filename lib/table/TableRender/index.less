@@ -1,0 +1,95 @@
+.pro-table-render {
+  position: absolute;
+  top: 24px;
+  bottom: 24px;
+  left: 24px;
+  right: 24px;
+  display: flex;
+  flex-direction: column;
+  .pro-table-render-toolbar {
+  }
+
+  .pro-table-realtable {
+    height: 0;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+
+    .el-table {
+      height: 0;
+      flex-grow: 1;
+      // z-index: 10;
+      &::before {
+        display: none;
+      }
+      .cell {
+        // max-height: 32px !important;
+        .extraIcon {
+          cursor: pointer;
+          margin-left: 3px;
+          color: #409eff;
+        }
+      }
+      .el-table__header {
+        table-layout: auto;
+      }
+      .el-table__header-wrapper {
+        table {
+          thead {
+            tr {
+              color: #404040;
+              th {
+                background-color: #f5f6fa;
+                border-bottom: 1px solid #d4d9e5;
+                border-top: 1px solid #d4d9e5;
+                &:first-child {
+                  border-left: 1px solid #d4d9e5;
+                }
+                &:last-child,
+                &:nth-last-child(2) {
+                  border-right: 1px solid #d4d9e5;
+                }
+              }
+            }
+          }
+        }
+      }
+      .el-table__body-wrapper {
+        table {
+          tbody {
+            > tr {
+              > td {
+                border-bottom: 1px solid #d4d9e5;
+                &:first-child {
+                  border-left: 1px solid #d4d9e5;
+                }
+                &:last-child {
+                  border-right: 1px solid #d4d9e5;
+                }
+              }
+            }
+          }
+        }
+      }
+      // .el-loading-mask {
+      //   background-color: rgba(21, 48, 76, 0.7);
+      // }
+
+      // &.el-table--medium {
+      //   .el-link {
+      //       font-size: 16px;
+      //   }
+      //   font-size: 16px;
+      //   td {
+      //       padding: 16px 0;
+      //   }
+      // }
+    }
+
+    .pro-table-pagination {
+      margin-top: 20px;
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+}

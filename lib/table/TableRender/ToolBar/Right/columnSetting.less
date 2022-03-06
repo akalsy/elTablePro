@@ -1,0 +1,56 @@
+.pro-columnSetting {
+    .pro-columnSetting-header {
+        border-bottom  : 1px solid #e9e9e9;
+        display        : flex;
+        justify-content: space-between;
+        align-items    : center;
+        padding-bottom : 10px;
+
+        .el-checkbox__input.is-checked+.el-checkbox__label{
+            color: #606266;
+        }
+    }
+
+    .pro-columnSetting-check {
+        padding: 10px 0 0;
+
+        .pro-column-checkbox {
+            margin: 3px 0;
+        }
+    }
+
+    .pro-columnSetting-title{
+        color: #bdbdbd;
+        font-size: 12px;
+        margin:5px 22px;
+    }
+
+    .el-tree{
+        user-select: none;
+        .custom-tree-node{
+            position: relative;
+            display: flex;
+            align-items: center;
+            width: 100%;
+            padding-right: 5px;
+            .custom-tree-node-label{
+                flex-grow: 1;
+            }
+            .custom-tree-node-icon{
+                color: #409eff;
+                margin-left: 5px;
+                visibility: hidden;
+            }
+            &:hover{
+                .custom-tree-node-icon{
+                    visibility: visible;
+                }
+            }
+        }
+        .el-tree-node__expand-icon{
+            // display: none;
+            padding: 6px 0;
+            width: 0;
+        }
+    }
+}
